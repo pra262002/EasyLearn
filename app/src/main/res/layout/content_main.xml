@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    tools:context=".View.MainActivity"
+    tools:showIn="@layout/app_bar_main"
+    android:layout_marginTop="35dp"
+   >
+
+    <ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="0dp"
+    android:id="@+id/tile1"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="270dp"
+        android:background="@drawable/gradient"
+            android:id="@+id/part"
+
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/text_user_card"
+                android:text="Hii User"
+                android:textColor="@android:color/black"
+                android:textSize="20sp"
+                android:fontFamily="@font/lato_regular"
+                android:paddingTop="25dp"
+               android:layout_marginLeft="7dp">
+            </TextView>
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/card1"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentLeft="true"
+                android:layout_marginStart="355dp"
+                android:layout_marginTop="7dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/icon1">
+            </de.hdodenhof.circleimageview.CircleImageView>
+
+        <TextView
+            android:id="@+id/deutsche_learn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="-40dp"
+            android:fontFamily="@font/andada"
+            android:gravity="center"
+            android:text="@string/title"
+            android:textColor="@android:color/black"
+            android:textSize="60dp"
+            android:textStyle="bold" />
+
+        <TextView
+
+            android:id="@+id/fun_tag"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="160dp"
+            android:layout_marginBottom="2dp"
+            android:fontFamily="@font/andada"
+            android:gravity="center"
+            android:text="@string/under_title"
+            android:textColor="#101010"
+            android:textSize="25sp"
+            />
+        </RelativeLayout>
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:columnCount="2"
+            android:layout_marginTop="-40dp"
+            android:padding="0dp"
+            android:layout_marginLeft="35dp"
+            >
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/driverManager"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_margin="10dp"
+                app:cardElevation="7dp"
+                app:cardCornerRadius="10dp"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_margin="2dp"
+                    android:padding="10dp"
+                    >
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/numbers"
+                        android:layout_gravity="center_horizontal|center_vertical"
+
+                        />
+
+                    <Button
+                        android:layout_marginTop="-11dp"
+                        android:id="@+id/number_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="Numbers"
+                        android:textColor="@android:color/black"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        style="@style/Widget.MaterialComponents.Button.TextButton"/>
+
+                </LinearLayout>
+
+
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/parkingManager"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_margin="10dp"
+                app:cardElevation="7dp"
+                app:cardCornerRadius="10dp"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_margin="2dp"
+                    android:padding="10dp"
+                    >
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/colorss"
+                        android:layout_gravity="center_horizontal|center_vertical"
+
+                        />
+
+                    <Button
+                        android:layout_marginTop="-11dp"
+                        android:id="@+id/color_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="Colors"
+                        android:textColor="@android:color/black"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        style="@style/Widget.MaterialComponents.Button.TextButton"/>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/history"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_margin="10dp"
+                app:cardElevation="7dp"
+                app:cardCornerRadius="10dp"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_margin="2dp"
+                    android:padding="10dp"
+                    >
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/months"
+                        android:layout_gravity="center_horizontal|center_vertical"
+
+                        />
+
+                    <Button
+                        android:layout_marginTop="-11dp"
+                        android:id="@+id/month_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="Months"
+                        android:textColor="@android:color/black"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        style="@style/Widget.MaterialComponents.Button.TextButton"/>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/feedback"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_margin="10dp"
+                app:cardElevation="7dp"
+                app:cardCornerRadius="10dp"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_margin="2dp"
+                    android:padding="10dp"
+                    >
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/things"
+                        android:layout_gravity="center_horizontal|center_vertical"
+
+                        />
+
+                    <Button
+                        android:layout_marginTop="-11dp"
+                        android:id="@+id/things_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="Vocabulary"
+                        android:textColor="@android:color/black"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        style="@style/Widget.MaterialComponents.Button.TextButton"/>
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/support"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_margin="10dp"
+                app:cardElevation="7dp"
+                app:cardCornerRadius="10dp"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_margin="2dp"
+                    android:padding="10dp"
+                    >
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/sentences"
+                        android:layout_gravity="center_horizontal|center_vertical"
+
+                        />
+
+                    <Button
+                        android:layout_marginTop="-11dp"
+                        android:id="@+id/sentence_button"
+                        android:text="Sentences"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:textColor="@android:color/black"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        style="@style/Widget.MaterialComponents.Button.TextButton"/>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/chatHead"
+                android:layout_marginEnd="8dp"
+                android:backgroundTint="#ffff"
+                android:src="@drawable/chat"
+                app:icon="@drawable/chat"
+                android:background="@drawable/circular_coloured_button"
+                android:tint="@android:color/black"
+                android:scaleType="center"
+                app:fabSize="normal"
+                app:maxImageSize="56dp"
+                android:elevation="10dp"
+
+                android:layout_gravity="end">
+
+            </com.google.android.material.floatingactionbutton.FloatingActionButton>
+
+        </GridLayout>
+    </LinearLayout>
+
+</ScrollView>
+
+</LinearLayout>
